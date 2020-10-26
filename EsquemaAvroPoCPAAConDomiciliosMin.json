@@ -6,5 +6,5 @@
    
     "namespace" : "my.example",
    
-    "fields" : [{​​​​"name" : "age", "type" : "int"}​​​​]
+    "fields" : {​​​​"name" : "age", "type" : "int"}​​​​
 }​​
