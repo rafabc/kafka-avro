@@ -1,0 +1,434 @@
+{
+	"namespace": "com.santalucia.arq.ams.starter.events.payload.paa",
+	"type": "record",
+	"name": "EsquemaAvroPoCPAA",
+	"fields": [
+		{
+			"name": "entrada",
+			"type": {
+				"name": "entrada",
+				"type": "record",
+				"fields": [
+					{
+						"name": "coProcesoMdm",
+						"type": "int"
+					},
+					{
+						"name": "feEfecto",
+						"type": "string"
+					},
+					{
+						"name": "nuIdentificacionHitachi",
+						"type": "int"
+					},
+					{
+						"name": "tuDatosPoliza",
+						"type": {
+							"name": "tuDatosPoliza",
+							"type": "record",
+							"fields": [
+								{
+									"name": "nuPoliza",
+									"type": "int"
+								},
+								{
+									"name": "coModalidad",
+									"type": "int"
+								},
+								{
+									"name": "ipPrimaBruta",
+									"type": "float"
+								},
+								{
+									"name": "coFormaPago",
+									"type": "string"
+								},
+								{
+									"name": "coMonitor",
+									"type": "string"
+								},
+								{
+									"name": "coRedVenta",
+									"type": "string"
+								},
+								{
+									"name": "coPackComercial",
+									"type": "string"
+								},
+								{
+									"name": "coSubagente",
+									"type": "string"
+								},
+								{
+									"name": "coAgencia",
+									"type": "int"
+								},
+								{
+									"name": "coIdioma",
+									"type": "string"
+								},
+								{
+									"name": "ipPrimaNeta",
+									"type": "float"
+								},
+								{
+									"name": "coTipoModificacion",
+									"type": "string"
+								},
+								{
+									"name": "coMediadorSUI",
+									"type": "string"
+								},
+								{
+									"name": "coEntidad",
+									"type": "int"
+								},
+								{
+									"name": "coRamo",
+									"type": "int"
+								},
+								{
+									"name": "coZonaGestionCartera",
+									"type": "string"
+								},
+								{
+									"name": "coTipoEstadoPoliza",
+									"type": "string"
+								},
+								{
+									"name": "coCausaEstadoPoliza",
+									"type": "string"
+								}
+							]
+						}
+					},
+					{
+						"name": "coCompania",
+						"type": "string"
+					},
+					{
+						"name": "nuIdentificacionGeneralDatos",
+						"type": "int"
+					},
+					{
+						"name": "inTratamientoDiferido",
+						"type": "string"
+					},
+					{
+						"name": "ltDomiciliosNormalizadosRegistradosPoliza",
+						"type": {
+							"type": "array",
+							"items": {
+								"name": "ltDomiciliosNormalizadosRegistradosPoliza_record",
+								"type": "record",
+								"fields": [
+									{
+										"name": "coTipoModificacion",
+										"type": "string"
+									},
+									{
+										"name": "nuOrdenSituacionPoliza",
+										"type": "int"
+									},
+									{
+										"name": "coTipoRol",
+										"type": "string"
+									},
+									{
+										"name": "nuOrdenPersonaRol",
+										"type": "int"
+									},
+									{
+										"name": "coTipoAmbitoMedioComunicacion",
+										"type": "string"
+									},
+									{
+										"name": "nuOrdenDomicilioPersona",
+										"type": "int"
+									},
+									{
+										"name": "coPais",
+										"type": "string"
+									},
+									{
+										"name": "coProvinciaIne",
+										"type": "int"
+									},
+									{
+										"name": "coMunicipioIne",
+										"type": "int"
+									},
+									{
+										"name": "coEntidadColectivaIne",
+										"type": "int"
+									},
+									{
+										"name": "coEntidadSingularIne",
+										"type": "int"
+									},
+									{
+										"name": "coNucleoPoblacionDiseminadoIne",
+										"type": "int"
+									},
+									{
+										"name": "coTipoVia",
+										"type": "string"
+									},
+									{
+										"name": "deDomicilio",
+										"type": "string"
+									},
+									{
+										"name": "nuDomicilio",
+										"type": "int"
+									},
+									{
+										"name": "deComplementoNumeroDomicilio",
+										"type": "string"
+									},
+									{
+										"name": "deBloque",
+										"type": "string"
+									},
+									{
+										"name": "dePortal",
+										"type": "string"
+									},
+									{
+										"name": "deEscaleraAmpliada",
+										"type": "string"
+									},
+									{
+										"name": "dePisoAmpliado",
+										"type": "string"
+									},
+									{
+										"name": "dePuertaAmpliada",
+										"type": "string"
+									},
+									{
+										"name": "deComplementoDomicilio",
+										"type": "string"
+									},
+									{
+										"name": "coPostal",
+										"type": "int"
+									},
+									{
+										"name": "dePoblacionExtranjero",
+										"type": "string"
+									}
+								]
+							}
+						}
+					},
+					{
+						"name": "coSubsistemaMdm",
+						"type": "int"
+					},
+					{
+						"name": "ltPersonasRolRegistradasPoliza",
+						"type": {
+							"type": "array",
+							"items": {
+								"name": "ltPersonasRolRegistradasPoliza_record",
+								"type": "record",
+								"fields": [
+									{
+										"name": "nuOrdenSituacionPoliza",
+										"type": "int"
+									},
+									{
+										"name": "coTipoRol",
+										"type": "string"
+									},
+									{
+										"name": "nuOrdenPersonaRol",
+										"type": "int"
+									},
+									{
+										"name": "coTipoPersona",
+										"type": "string"
+									},
+									{
+										"name": "coTipoDocumentoIdentificacion",
+										"type": "string"
+									},
+									{
+										"name": "nuDocumentoIdentificacion",
+										"type": "string"
+									},
+									{
+										"name": "deNombre",
+										"type": "string"
+									},
+									{
+										"name": "deApellido1",
+										"type": "string"
+									},
+									{
+										"name": "deApellido2",
+										"type": "string"
+									},
+									{
+										"name": "coSexo",
+										"type": "string"
+									},
+									{
+										"name": "coEstadoCivil",
+										"type": "string"
+									},
+									{
+										"name": "feNacimiento",
+										"type": "string"
+									},
+									{
+										"name": "coNacionalidad",
+										"type": "string"
+									},
+									{
+										"name": "feDerechos",
+										"type": "string"
+									},
+									{
+										"name": "vaEdad",
+										"type": "int"
+									},
+									{
+										"name": "coTipoEdadAsegurado",
+										"type": "string"
+									},
+									{
+										"name": "inAuxiliarExterno",
+										"type": "string"
+									},
+									{
+										"name": "coTipoModificacion",
+										"type": "string"
+									},
+									{
+										"name": "inClienteWeb",
+										"type": "string"
+									},
+									{
+										"name": "inFallecido",
+										"type": "string"
+									}
+								]
+							}
+						}
+					},
+					{
+						"name": "ltMediosContacto",
+						"type": {
+							"type": "array",
+							"items": {
+								"name": "ltMediosContacto_record",
+								"type": "record",
+								"fields": [
+									{
+										"name": "nuOrdenSituacionPoliza",
+										"type": "int"
+									},
+									{
+										"name": "coTipoRol",
+										"type": "string"
+									},
+									{
+										"name": "nuOrdenPersonaRol",
+										"type": "int"
+									},
+									{
+										"name": "coTipoMedioComunicacion",
+										"type": "string"
+									},
+									{
+										"name": "deMedioComunicacion",
+										"type": "string"
+									},
+									{
+										"name": "coTipoAmbitoMedioComunicacion",
+										"type": "string"
+									},
+									{
+										"name": "coTipoModificacion",
+										"type": "string"
+									}
+								]
+							}
+						}
+					},
+					{
+						"name": "nuUsuario",
+						"type": "int"
+					},
+					{
+						"name": "coCanalMdm",
+						"type": "int"
+					},
+					{
+						"name": "ltClausulasLopdRegistrasPoliza",
+						"type": {
+							"type": "array",
+							"items": {
+								"name": "ltClausulasLopdRegistrasPoliza_record",
+								"type": "record",
+								"fields": [
+									{
+										"name": "coConcepto",
+										"type": "int"
+									},
+									{
+										"name": "inAceptacionClausula",
+										"type": "string"
+									},
+									{
+										"name": "coTipoModificacion",
+										"type": "string"
+									}
+								]
+							}
+						}
+					},
+					{
+						"name": "coSistema",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "correlacion",
+			"type": {
+				"name": "correlacion",
+				"type": "record",
+				"fields": [
+					{
+						"name": "coRN",
+						"type": "string"
+					},
+					{
+						"name": "coProceso",
+						"type": "string"
+					},
+					{
+						"name": "coSistemaAplicacion",
+						"type": "string"
+					},
+					{
+						"name": "nuOrdenModificacion",
+						"type": "int"
+					},
+					{
+						"name": "nuIdentificacionGeneralDatos",
+						"type": "int"
+					},
+					{
+						"name": "coSubsistemaAplicacion",
+						"type": "string"
+					}
+				]
+			}
+		}
+	]
+}
