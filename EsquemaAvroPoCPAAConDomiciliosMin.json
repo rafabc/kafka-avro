@@ -1,4 +1,10 @@
-{​​​​ "type" : "record", "name" : "Tree", 
-    "fields" : [ {​​​​"name" : "children",
-     "type" : ("type" : "array", 
-     "items": "Tree"}​​​​}​​​​ ]}​​​​
+{​​​​
+
+    "type" : "record",
+   
+    "name" : "userInfo",
+   
+    "namespace" : "my.example",
+   
+    "fields" : [{​​​​"name" : "age", "type" : "int"}​​​​]
+}​​
